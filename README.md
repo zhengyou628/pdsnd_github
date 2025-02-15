@@ -19,3 +19,6 @@ Users can filter data by city, month, and day to explore various statistics.
 - Pandas
 - Numpy
 - Time
+
+## Notes
+This project is part of the Udacity Data Analysis course.
