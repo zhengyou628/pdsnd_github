@@ -8,8 +8,18 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 def get_filters():
     """
-    Asks user to specify a city, month, and day to analyze.
+    Ask the user to choose a city, month, and day to filter the data.
+
+    Returns:
+        (str) city - chosen city ('chicago', 'new york city', 'washington')
+        (str) month - chosen month ('january' ~ 'june', or 'all')
+        (str) day - chosen day ('monday' ~ 'sunday', or 'all')
+
+    Notes:
+        - Keeps asking until the user enters a valid input.
+        - If 'all' is chosen, no filter is applied.
     """
+    
     print('Hello! Let\'s explore some US bikeshare data!')
     
     # Get user input for city
