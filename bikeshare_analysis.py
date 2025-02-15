@@ -6,7 +6,11 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+
 def get_filters():
+    #want to refact this function in a more readable way..
+    #want to combine 3 while statements into one..
+    #let me think about it myself and solve it after finish this course.
     """
     Ask the user to choose a city, month, and day to filter the data.
 
