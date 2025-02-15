@@ -19,7 +19,7 @@ def get_filters():
         - Keeps asking until the user enters a valid input.
         - If 'all' is chosen, no filter is applied.
     """
-    
+
     print('Hello! Let\'s explore some US bikeshare data!')
     
     # Get user input for city
@@ -124,7 +124,16 @@ def user_stats(df):
     print('-'*40)
 
 def display_raw_data(df):
-    """Displays 5 rows of raw data at a time upon user request."""
+    """
+    Show 5 rows of raw data if the user requests it.
+
+    Args:
+        df (DataFrame): Filtered bikeshare data
+
+    Notes:
+        - If the user types 'yes', 5 more rows are shown.
+        - If the user types 'no', it stops showing data.
+    """
     row_index = 0
     while True:
         raw_data = input("\nWould you like to see 5 rows of raw data? Enter yes or no: ").lower()
